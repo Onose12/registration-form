@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Registration Form </h1>
+    <P>Please fill out this form with the required information</P>
+    <form action="https://register-demo.freecodecamp.org">
+        <fieldset>
+<label>Enter your First Name: <input name="first-name" type="text" minLength="8"  required></label>
+
+<label>Enter Your Last Name: <input name="last-name" type="text" minLength="8" required></label>
+
+<label>Enter Your Email: <input name="email" type="email" minLength="8"  required></label>
+
+<label>Create a New Password: <input type="password"pattern="[a-z0-5]{8,}." required></label>
+</fieldset>
+        <fieldset>
+<label><input class="inline" type="radio" name="account-type"> Personal Account</label>
+<label><input class="inline" type="radio" name="account-type">Business Account</label>
+<label><input class="inline" type="checkbox"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        </fieldset>
+
+        <fieldset>
+<label>Upload a profile picture: <input  name="file" type="file"></label>
+<label>Input your age (years): <input name="number" type="number" min="13" max="120"></label>
+<label>How did you hear about us? <select>
+    <option value=""> (select one) </option>
+    <option value="1"> A friend</option>
+    <option value="2"> News</option>
+    <option value="3">YouTube Channel</option>
+    <option value="4">Bogpost</option>
+</select>
+</label>
+<label>Provide a Bio:<textarea name="bio" srows="3" cols="30" placeholder="Hi! I like dancing, eating and swimming. "></textarea></label>
+        </fieldset>
+        
+<input type="submit" value="Submit">
+    </form>
+</body>
+</html>
